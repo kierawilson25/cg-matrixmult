@@ -14,7 +14,7 @@ function CalculateCompoundTransform(transforms) {
     // otherwise multiply all matrices together (in proper order)
     else{
         var i =transforms.length;
-        for(i; i >= 0; i --)
+        for(i; i >= 0; i--)
         {
             transform_matrices.push(transforms[i].mat4x4);
         }
