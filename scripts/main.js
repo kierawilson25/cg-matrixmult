@@ -2,15 +2,28 @@ var compound_transform;
 
 // automatically called whenever any transform changes
 function CalculateCompoundTransform(transforms) {
+    compound_transform = new Matrix(4, 4); // change / remove this
     // matrices in `transforms[i].mat4x4`
     // note `transform[0]` is first tranform to apply to vertex
     
     // if only one transform, set compound transform eequal to it
+    if(transforms.length == 1){
+        compound_transforms = transforms[0].mat4x4;
+    }
     // otherwise multiply all matrices together (in proper order)
-    // `compound_transform = Matrix.multiply(...)`
+    else{
+        for(int i =0; i < transforms.length ; i ++)
+        {
+            // `compound_transform = Matrix.multiply(...)`
+            compound_transform = Matrix.multiply(transforms[i].mat4x4);
+        }
+    }
+        
+    
+    
     var tranform_matrices = [];
-
-    compound_transform = new Matrix(4, 4); // change / remove this
+    
+   
 
     return compound_transform;
 }
