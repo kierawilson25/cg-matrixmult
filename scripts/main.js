@@ -32,7 +32,7 @@ function CalculateTransformedVertex(vertex) {
     
     /////Does it really need to be removed
     var final_vertex = new Vector(4); // change / remove this
-    //final_vertex = vertex;
+    final_vertex = Matrix.multiply([compound_transformation, vertex]);
     //Not sure if this stuff is right 
     final_vertex = Matrix.multiply(vertex);
     return final_vertex;
