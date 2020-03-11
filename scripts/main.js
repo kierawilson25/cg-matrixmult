@@ -55,6 +55,7 @@ function ChangeTransform(index, type, values) {
     }
     else{
         Mat4x4RotateZ(app.transforms[index].mat4x4, values[0]);
+    }
         
         
 
