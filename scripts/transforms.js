@@ -15,7 +15,7 @@ function Mat4x4Translate(mat4x4, tx, ty, tz) {
      mat4x4.values = [
         [1,0,0,tx],
         [0,1,0,ty],
-        [0,0,1,ty],
+        [0,0,1,tz],
         [0,0,0,1]
     ];
 }
