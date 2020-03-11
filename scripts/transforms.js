@@ -46,9 +46,9 @@ function Mat4x4RotateX(mat4x4, theta) {
 function Mat4x4RotateY(mat4x4, theta) {
     //mat4x4.values = ...
     mat4x4.values = [
-        [Math.cos(theta),0,Math.sin(theta),0]
-        [0,1,0,0]
-        [-1*Math.sin(theta),0,Math.cos(theta),0]
+        [Math.cos(theta),0,Math.sin(theta),0],
+        [0,1,0,0],
+        [-1*Math.sin(theta),0,Math.cos(theta),0],
         [0,0,0,1]
     ];
 }
