@@ -68,6 +68,12 @@ function Mat4x4RotateZ(mat4x4, theta) {
 // set values of mat4x4 to the shear parallel to the xy-plane matrix
 function Mat4x4ShearXY(mat4x4, shx, shy) {
     //mat4x4.values = ...
+    mat4x4.values = [
+        [1,0,shx,0]
+        [0,1,shy,0]
+        [0,0,1,0]
+        [0,0,0,1]
+    ];
 }
 
 // set the x,y,z values of a 3-component vector
