@@ -13,7 +13,8 @@ function CalculateCompoundTransform(transforms) {
     }
     // otherwise multiply all matrices together (in proper order)
     else{
-        for(int i =0; i < transforms.length ; i ++)
+        var i =0;
+        for(i; i < transforms.length ; i ++)
         {
             transform_matricies.push(transform[i].mat4x4);
             
