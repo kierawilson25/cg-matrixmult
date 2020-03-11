@@ -16,10 +16,10 @@ function CalculateCompoundTransform(transforms) {
         var i =0;
         for(i; i < transforms.length ; i ++)
         {
-            transform_matrices.push(transform[i].mat4x4);
+            transform_matrices.push(transforms[i].mat4x4);
         }
         // `compound_transform = Matrix.multiply(...)`
-        compound_transform = Matrix.multiply(transform_matricies);
+        compound_transform = Matrix.multiply(transform_matrices);
     }
 
     return compound_transform;
