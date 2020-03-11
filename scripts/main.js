@@ -3,7 +3,7 @@ var compound_transform;
 // automatically called whenever any transform changes
 function CalculateCompoundTransform(transforms) {
     compound_transform = new Matrix(4, 4); // change / remove this
-    var tranform_matrices = [];
+    var transform_matrices = [];
     // matrices in `transforms[i].mat4x4`
     // note `transform[0]` is first tranform to apply to vertex
     
